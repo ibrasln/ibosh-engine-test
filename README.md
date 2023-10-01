@@ -15,7 +15,7 @@ Colorful Debug Messages
  Ensure your code runs smoothly with the built-in validation methods. Use these tools during Unity's OnValidate() phase to identify and fix common issues early in development.
 
 ## Streamlined Debugging
- Simplify your debugging workflow with easy-to-use methods for logging messages, errors, and warnings. Ibosh Custom Debugger helps you debug efficiently and effectively, speeding up your development process.
+ Simplify your debugging workflow with easy-to-use methods for logging messages, errors, and warnings. It helps you debug efficiently and effectively, speeding up your development process.
 
 ## Conditional Debugging
  Control when your debug messages appear by leveraging Unity's isDebugBuild option. Messages are displayed only when needed, reducing clutter and distractions during development.
