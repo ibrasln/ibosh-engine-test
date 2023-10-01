@@ -26,5 +26,5 @@
 **- Singleton Enforcement:** It ensures that only one instance of the specified MonoBehaviour type exists at any given time. If multiple instances are detected, it logs an error message and destroys the extra instances, keeping your project clean and efficient.
 
 ## Example
-![singleton](https://github.com/ibrasln/ibosh-engine/assets/75907428/8898311c-90bd-417f-bfe4-ca6bf847e184)
+<img src="https://github.com/ibrasln/ibosh-engine/assets/75907428/8898311c-90bd-417f-bfe4-ca6bf847e184" alt="image" width="300" height="auto">()
 
