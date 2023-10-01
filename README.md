@@ -61,6 +61,15 @@
 **- Positive Range Validation:** Validate a range of float or integer values, ensuring that the minimum value is less than or equal to the maximum value. Log warnings for any inconsistencies.
 
 ## Example
+
+### First Usage
+ It can be used on OnValidate() method of Unity. Everytime you take an action on the inspector window of a script, OnValidate() executes. Consequently, our validation methods execute.
 <img src="https://github.com/ibrasln/ibosh-engine/assets/75907428/1a75c0c6-fd42-43da-854a-15527b5920bb" alt="image" width="75%" height="auto">
 <img src="https://github.com/ibrasln/ibosh-engine/assets/75907428/45e1337f-8b74-48f5-8810-2e4bc88fd3dc" alt="image" width="75%" height="auto">
 <img src="https://github.com/ibrasln/ibosh-engine/assets/75907428/77dd9ee9-574b-431b-9370-b77b9f7eebe2" alt="image" width="75%" height="auto">
+
+### Second usage
+ It can be used on Start() method of Unity. If you forget the populate a variable, these methods execute on the Start() function, and populate the empty variables. **NOTE: The prefab should exist in the Resources folder.**
+<img src="https://github.com/ibrasln/ibosh-engine/assets/75907428/5ee656ce-27bf-44b2-8a6c-1a746e6b516c" alt="image" width="75%" height="auto">
+<img src="https://github.com/ibrasln/ibosh-engine/assets/75907428/4bfd45cb-e2b5-41a8-a1d1-8be181234d8e" alt="image" width="75%" height="auto">
+<img src="https://github.com/ibrasln/ibosh-engine/assets/75907428/aa6bdaa0-9899-4193-8245-fbc80d2e001c" alt="image" width="75%" height="auto"> 
