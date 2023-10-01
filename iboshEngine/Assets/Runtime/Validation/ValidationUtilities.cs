@@ -1,3 +1,4 @@
+using IboshEngine.Debugger;
 using System.Collections;
 using UnityEngine;
 
@@ -12,7 +13,7 @@ namespace IboshEngine.Validation
         {
             if (stringToCheck == "")
             {
-                Debug.Log(fieldName + " is empty and must contain a value in object " + thisObject.name.ToString());
+                IboshDebugger.LogWarning($"{fieldName} is empty and must contain a value in object {thisObject.name}", thisObject.name, IboshDebugger.DebugColor.Gray, IboshDebugger.DebugColor.Yellow);
                 return true;
             }
             return false;
@@ -25,7 +26,7 @@ namespace IboshEngine.Validation
         {
             if (objectToCheck == null)
             {
-                Debug.Log(fieldName + " is null and must contain a value in object " + thisObject.name.ToString());
+                IboshDebugger.LogWarning($"{fieldName} is null and must contain a value in object {thisObject.name}", thisObject.name, IboshDebugger.DebugColor.Gray, IboshDebugger.DebugColor.Yellow);
                 return true;
             }
             return false;
@@ -41,7 +42,7 @@ namespace IboshEngine.Validation
 
             if (enumerableObjectToCheck == null)
             {
-                Debug.Log(fieldName + " is null in object " + thisObject.name.ToString());
+                IboshDebugger.LogWarning($"{fieldName} is null in object {thisObject.name}", thisObject.name, IboshDebugger.DebugColor.Gray, IboshDebugger.DebugColor.Yellow);
                 return true;
             }
 
@@ -51,7 +52,7 @@ namespace IboshEngine.Validation
 
                 if (item == null)
                 {
-                    Debug.Log(fieldName + " has null values in object " + thisObject.name.ToString());
+                    IboshDebugger.LogWarning($"{fieldName} has null values in object {thisObject.name}", thisObject.name, IboshDebugger.DebugColor.Gray, IboshDebugger.DebugColor.Yellow);
                     error = true;
                 }
                 else
@@ -62,7 +63,7 @@ namespace IboshEngine.Validation
 
             if (count == 0)
             {
-                Debug.Log(fieldName + " has no values in object " + thisObject.name.ToString());
+                IboshDebugger.LogWarning($"{fieldName} has no values in object {thisObject.name}", thisObject.name, IboshDebugger.DebugColor.Gray, IboshDebugger.DebugColor.Yellow);
                 error = true;
             }
 
@@ -80,7 +81,7 @@ namespace IboshEngine.Validation
             {
                 if (valueToCheck < 0)
                 {
-                    Debug.Log(fieldName + " must contain a positive value or zero in object " + thisObject.name.ToString());
+                    IboshDebugger.LogWarning($"{fieldName} must contain a positive value or zero in object {thisObject.name}", thisObject.name, IboshDebugger.DebugColor.Gray, IboshDebugger.DebugColor.Yellow);
                     error = true;
                 }
             }
@@ -88,7 +89,7 @@ namespace IboshEngine.Validation
             {
                 if (valueToCheck <= 0)
                 {
-                    Debug.Log(fieldName + " must contain a positive value in object " + thisObject.name.ToString());
+                    IboshDebugger.LogWarning($"{fieldName} must contain a positive value in object {thisObject.name}", thisObject.name, IboshDebugger.DebugColor.Gray, IboshDebugger.DebugColor.Yellow);
                     error = true;
                 }
             }
@@ -107,7 +108,7 @@ namespace IboshEngine.Validation
             {
                 if (valueToCheck < 0)
                 {
-                    Debug.Log(fieldName + " must contain a positive value or zero in object " + thisObject.name.ToString());
+                    IboshDebugger.LogWarning($"{fieldName} must contain a positive value or zero in object {thisObject.name}", thisObject.name, IboshDebugger.DebugColor.Gray, IboshDebugger.DebugColor.Yellow);
                     error = true;
                 }
             }
@@ -115,7 +116,7 @@ namespace IboshEngine.Validation
             {
                 if (valueToCheck <= 0)
                 {
-                    Debug.Log(fieldName + " must contain a positive value in object " + thisObject.name.ToString());
+                    IboshDebugger.LogWarning($"{fieldName} must contain a positive value in object {thisObject.name}", thisObject.name, IboshDebugger.DebugColor.Gray, IboshDebugger.DebugColor.Yellow);
                     error = true;
                 }
             }
@@ -131,7 +132,7 @@ namespace IboshEngine.Validation
 
             if (valueToCheckMinimum > valueToCheckMaximum)
             {
-                Debug.Log(fieldNameMinimum + " must be less than or equal to " + fieldNameMaximum + " in object " + thisObject.name.ToString());
+                IboshDebugger.LogWarning($"{fieldNameMinimum} must be less than or equal to {fieldNameMaximum} in object {thisObject.name}", thisObject.name, IboshDebugger.DebugColor.Gray, IboshDebugger.DebugColor.Yellow);
                 error = true;
             }
 
@@ -150,7 +151,7 @@ namespace IboshEngine.Validation
 
             if (valueToCheckMinimum > valueToCheckMaximum)
             {
-                Debug.Log(fieldNameMinimum + " must be less than or equal to " + fieldNameMaximum + " in object " + thisObject.name.ToString());
+                IboshDebugger.LogWarning($"{fieldNameMinimum} must be less than or equal to {fieldNameMaximum} in object {thisObject.name}", thisObject.name, IboshDebugger.DebugColor.Gray, IboshDebugger.DebugColor.Yellow);
                 error = true;
             }
 
