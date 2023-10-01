@@ -42,6 +42,6 @@
 **- Integration Flexibility:** It is designed to work with any GameObject-based components, offering flexibility in integrating it with various parts of your Unity project.
 
 ## Example
-<img src="https://github.com/ibrasln/ibosh-engine/assets/75907428/fd2118d5-7884-47fa-9940-3b6c40a7300c" alt="image" width="75%" height="450">
-<img src="https://github.com/ibrasln/ibosh-engine/assets/75907428/7a2cf76f-d7f8-4055-b598-397583c8cf75" alt="image" width="75%" height="550">
+<img src="https://github.com/ibrasln/ibosh-engine/assets/75907428/fd2118d5-7884-47fa-9940-3b6c40a7300c" alt="image" width="75%" height="auto">
+<img src="https://github.com/ibrasln/ibosh-engine/assets/75907428/7a2cf76f-d7f8-4055-b598-397583c8cf75" alt="image" width="75%" height="auto">
 
