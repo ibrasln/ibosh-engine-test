@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace IboshEngine.IboshDebug
+namespace IboshEngine.Debugger
 {
     public static class IboshDebugger
     {

@@ -1,4 +1,4 @@
-using IboshEngine.IboshDebug;
+using IboshEngine.Debugger;
 using UnityEngine;
 
 namespace IboshEngine.Singleton
